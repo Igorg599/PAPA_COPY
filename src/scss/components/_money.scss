@@ -1,0 +1,45 @@
+.money {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__block img{
+        height: 150px;
+    }
+
+    &__descr {
+        display: block;
+        text-align: start;
+    }
+
+    &__desc1 {
+        margin-top: 33px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    &__desc2 {
+        margin-top: 5px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .money__block img {
+        height: 100px;
+        margin: auto;
+    }
+}
