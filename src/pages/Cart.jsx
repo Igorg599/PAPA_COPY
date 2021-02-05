@@ -136,7 +136,7 @@ function Cart() {
               <div className="cart__order">
                 <p>Введите личные данные для оформления заказа:</p>
                 <form onSubmit={onSubmit} action="#"  className="cart__order-form">
-                  <input type="hidden" name="admin_email[]" value="igorg599@gmail.com"/>
+                  <input type="hidden" name="admin_email[]" value="izi108st@gmail.com"/>
                   <label className="cart__order-form-label">
                     <span className="cart__order-form-text">Ваше имя</span>
                     <input type="text" name="Имя" className="cart__order-form-input"></input>
