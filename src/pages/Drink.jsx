@@ -7,6 +7,10 @@ import Mors from '../assets/img/drink/mors-1000x1000.jpg';
 
 
 const Drink = () => {
+  React.useEffect(() => {
+    document.body.style.overflow = 'auto';
+  }, []);
+  
     const dispatch = useDispatch();
     const cartItems = useSelector(({cart}) => cart.items);
 

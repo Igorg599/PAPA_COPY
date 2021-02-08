@@ -1,6 +1,10 @@
 import React from 'react';
 
 function Money() {
+    React.useEffect(() => {
+        document.body.style.overflow = 'auto';
+    }, []);
+    
     return (
         <div className="money">
             <div className="container">

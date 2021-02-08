@@ -38,6 +38,10 @@ import Sezon from '../assets/img/pizza/4sezona.jpg';
 import Sto from '../assets/img/pizza/108.jpg';
 
 const Home = () => {
+  React.useEffect(() => {
+    document.body.style.overflow = 'auto';
+  }, []);
+  
   const dispatch = useDispatch();
   const cartItems = useSelector(({cart}) => cart.items);
 
@@ -47,6 +51,10 @@ const Home = () => {
       payload: obj
     });
   };
+
+  React.useEffect(() => {
+    document.body.style.overflow = 'auto';
+  }, []);
 
   return (
     <>

@@ -9,16 +9,19 @@ import Sal from '../assets/img/sauce/syrnyj-1000x1000.jpg';
 import Bar from '../assets/img/sauce/bbq-1000x1000.jpg';
 
 const Sauce = () => {
-    const dispatch = useDispatch();
-    const cartItems = useSelector(({cart}) => cart.items);
+  React.useEffect(() => {
+    document.body.style.overflow = 'auto';
+  }, []);
 
-    const handleAddSauceToCart = (obj) => {
-      dispatch({
-        type: 'ADD_PIZZA_CART',
-        payload: obj
-      });
-    }
+  const dispatch = useDispatch();
+  const cartItems = useSelector(({cart}) => cart.items);
 
+  const handleAddSauceToCart = (obj) => {
+    dispatch({
+      type: 'ADD_PIZZA_CART',
+      payload: obj
+    });
+  }
   
     return (
       <div className="container">

@@ -6,30 +6,34 @@ import Kar from '../assets/img/snacks/kartofelnyedolki-1000x1000.jpg';
 import Nag from '../assets/img/snacks/naggetsy-1000x1000.jpg';
 
 const Snacks = () => {
-    const dispatch = useDispatch();
-    const cartItems = useSelector(({cart}) => cart.items);
+  React.useEffect(() => {
+    document.body.style.overflow = 'auto';
+  }, []);
 
-    const handleAddSnacksToCart = (obj) => {
-      dispatch({
-        type: 'ADD_PIZZA_CART',
-        payload: obj
-      });
-    }
-  
-    return (
-      <div className="container">
-          <div className="content__items">
-            { 
-              items.map(obj => 
-              <SnacksBlock 
-              onClickAddSnacks={handleAddSnacksToCart}
-              key={obj.id}
-              addedCount={cartItems[obj.id] && cartItems[obj.id].items.length} 
-              {...obj}/>)
-            }
-          </div>
-      </div>
-    )
+  const dispatch = useDispatch();
+  const cartItems = useSelector(({cart}) => cart.items);
+
+  const handleAddSnacksToCart = (obj) => {
+    dispatch({
+      type: 'ADD_PIZZA_CART',
+      payload: obj
+    });
+  }
+
+  return (
+    <div className="container">
+        <div className="content__items">
+          { 
+            items.map(obj => 
+            <SnacksBlock 
+            onClickAddSnacks={handleAddSnacksToCart}
+            key={obj.id}
+            addedCount={cartItems[obj.id] && cartItems[obj.id].items.length} 
+            {...obj}/>)
+          }
+        </div>
+    </div>
+  )
   }
   
   export default Snacks;

@@ -1,6 +1,10 @@
 import React from 'react';
 
 function Condition() {
+    React.useEffect(() => {
+        document.body.style.overflow = 'auto';
+    }, []);
+    
     return (
         <div className="about">
             <div className="container">

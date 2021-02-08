@@ -128,7 +128,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div class="pageup" onClick={Pageup}>
+            <div className="pageup" onClick={Pageup}>
                 <img src={up} width="36" alt="up"/>
             </div>
         </>

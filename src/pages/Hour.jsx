@@ -4,6 +4,10 @@ import React from 'react';
 import freePizza from '../assets/img/pizza-free.jpg';
 
 function Hour() {
+    React.useEffect(() => {
+        document.body.style.overflow = 'auto';
+    }, []);
+    
     return (
         <div className="hour">
             <div className="container">

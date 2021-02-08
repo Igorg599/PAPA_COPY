@@ -1,6 +1,10 @@
 import React from 'react';
 
 function Politics() {
+    React.useEffect(() => {
+        document.body.style.overflow = 'auto';
+    }, []);
+    
     return (
         <div className="politics">
             <div className="container">
