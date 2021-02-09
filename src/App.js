@@ -12,7 +12,7 @@ function App() {
         <div className="wrapper">
           <Header/>
           <div className="content">
-            <Route path="/" component={Home} exact/>
+            <Route path={["/", "/picca"]} component={Home} exact/>
             <Route path="/cart" component={Cart} exact/>
             <Route path="/combo" component={Combo} exact/>
             <Route path="/drink" component={Drink} exact/>
