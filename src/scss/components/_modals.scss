@@ -141,7 +141,9 @@
                 width: 395px;
             }
             &-right {
-                display: block;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 width: 395px;
                 &-drink {
                     display: flex;
