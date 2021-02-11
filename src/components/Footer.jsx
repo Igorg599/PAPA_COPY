@@ -21,7 +21,7 @@ function Footer() {
                 </ul>
                 <div className="footer__solid"></div>
                 <div className="footer__bottom">
-                    <h4 className="footer__rights"> PAPA PIZZA © 2020 </h4>
+                    <h4 className="footer__rights"> PAPA PIZZA © 2021 </h4>
                     <div className="footer__logo">
                         <a href="https://www.instagram.com/papapizzaperm/"><img src={Insta} alt="logo"/></a>
                         <a href="https://vk.com/papapizza59"><img src={Vk} alt="logo"/></a>
