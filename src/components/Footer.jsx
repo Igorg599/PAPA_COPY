@@ -6,7 +6,7 @@ import Vk from '../assets/img/vk.svg';
 import GooglePlay from '../assets/img/google_play.png';
 
 
-const bottomCategory = [{name: 'Пиццерия', path: '/about'}, {name: 'Условия бесплатной доставки', path: '/condition'}, {name: 'Оплата', path: '/money'}, {name: 'Политика конфиденциальности', path: '/politics' }, {name: 'Публичная оферта', path: '/offer'}];
+const bottomCategory = [{name: 'Пиццерия', path: '/about'}, {name: 'Условия доставки', path: '/condition'}, {name: 'Оплата', path: '/money'}, {name: 'Политика конфиденциальности', path: '/politics' }, {name: 'Публичная оферта', path: '/offer'}];
 
 function Footer() {
     return (
@@ -15,7 +15,7 @@ function Footer() {
                 <ul>
                     {bottomCategory.map((item, index) => (
                         <Link key={index} to={item.path}>
-                        <li>{item.name}</li>
+                            <li>{item.name}</li>
                         </Link>
                     ))}
                 </ul>
