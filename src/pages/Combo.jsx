@@ -14,12 +14,10 @@ import Ogaio from '../assets/img/pizza/ogajo.jpg';
 import Newmexico from '../assets/img/pizza/nju-meksiko.jpg';
 import Newyork from '../assets/img/pizza/nju-jork.jpg';
 import Myaso from '../assets/img/pizza/mjasnaja.jpg';
-import More from '../assets/img/pizza/morskaja.jpg';
 import Mari from '../assets/img/pizza/miriel.jpg';
 import Mehico from '../assets/img/pizza/mehiko.jpg';
 import Margaritaluxe from '../assets/img/pizza/magodeljuks.jpg';
 import Margarita from '../assets/img/pizza/margo.jpg';
-import Mayami from '../assets/img/pizza/majmi.jpg';
 import Classica from '../assets/img/pizza/klassicheskaja.jpg';
 import Carolina from '../assets/img/pizza/karolina.jpg';
 import Caperolla from '../assets/img/pizza/kaperolla.jpg';
@@ -183,14 +181,6 @@ const itemsPizza = [
     "rating": 0
   },
   {
-    "id": 11,
-    "imageUrl": More,
-    "name": "Морская",
-    "descr": "Состав: соус 'Мутти', сыр 'Моцарелла', снежный краб, креветки, лосось",
-    "price": [535, 850, 1110],
-    "rating": 0
-  },
-  {
     "id": 12,
     "imageUrl": Mari,
     "name": "Мириэль",
@@ -220,14 +210,6 @@ const itemsPizza = [
     "name": "Маргарита",
     "descr": "Состав: соус 'Мутти', сыр 'Моцарелла', томаты.",
     "price": [355, 540, 660],
-    "rating": 0
-  },
-  {
-    "id": 16,
-    "imageUrl": Mayami,
-    "name": "Майами",
-    "descr": "Состав: соус 'Мутти', сыр 'Моцарелла', креветки тигровые, лосось копчёный, лимон, базилик.",
-    "price": [565, 865, 1110],
     "rating": 0
   },
   {
